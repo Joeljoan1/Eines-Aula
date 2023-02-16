@@ -1,32 +1,76 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="./css/estilo.css" /> 
-</head>
-<body>
-  <header>
-    <div class="linea">
-      <div class="logo-linea">
-        <img src="./imagenes/Logo-Delicias.png" alt="logo" class="logo">
-      </div>
-    </div>
-  </header>
-  <div class="linea-abajo">
-  <ul>
-    <li><a href="./listado/listado.html"></a>INICIO</li>
-    <li><a class="active" href="./contacto/contacto.html">SOBRE MÍ</a></li>
-    <li><a href="./listado/listado.html">RECETAS</a></li>
-    <li><a href="./listado/listado.html"></a>CONTACTO</li>
-    <li><a href="./listado/listado.html"></a>OTRAS COSAS</li>
-  </ul>
-  <h1 class="linea">
-    <div class="container">
-      <div class="image"> <img src="./imagenes/calabacines.jpg" alt="This is my second image." height="250px"/> </div> 
-      <div class="image"> <img src="./imagenes/barritas.jpg" alt="My third image." height="250px"/> </div> 
-      <div class="image"> <img src="./imagenes/galletas.jpg" alt="This is my image." height="250px"/> </div> 
-      <div class="image"> <img src="./imagenes/isagil.png" alt="This is my second image." height="250px"/> </div> 
-    </div>
-</body>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./css/estilo.css" /> 
+    </head>
+    <body>
+        <div id="header">
+            <h1>
+                <h2>
+                    <img src="./imagenes/Logo-Delicias.png" width="auto" height="auto">
+                </h2>
+            </h1>
+            <ul class="sticky">
+                <p class="sticky">INICIO</p>
+                <p class="sticky">SOBRE MI</p>
+                <p class="sticky"><a href="./receta/recetas.html">RECETAS</a></p>
+                <p class="sticky"><a href="./contacto/contactos.html">CONTACTOS</a></p>
+                <p class="sticky">OTRAS COSAS</p>
+            </ul>
+        </div>
+
+        <div id="trunk">
+            <aside1></aside1>       
+            <aside2></aside2>
+            <seccion>
+                <presentacion>
+                    <p class="negrita">Sobre mi</p>
+                    <img src="./imagenes/isagil.png">
+                    <p class="izquierda">Hola, bienvenid@ a mi blog, un espacio donde quiero compartir mis recetas vegetarianas y veganas favoritas.</p>
+                </presentacion>
+                <Anuncio>
+                    <p class="negrita">Suscríbete a mi blog</p>
+                    <img src="./imagenes/libro.png">
+                    <parrafo>Y consiguete GRATIS mi eBook con 10 recetas exclusivas con suplementos</parrafo>                    
+                </Anuncio>    
+                <p class="Boton">Apúntame</p>            
+            </seccion>       
+            <recetas>
+                <receta>
+                    <img src="./imagenes/Pasta.jpg" width="100%" height="auto">
+                    <p class="negrita">Pasta con salsa de coliflor y pimienta de Jamaica</p>
+                    <p class="rayaverde">13 marzo, 2019</p>
+                    <p class="izquierda">Una salsa vegana para la pasta, tan ....</p>
+                </receta>
+                <receta>
+                    <img src="./imagenes/galletas.jpg" width="100%" height="auto">
+                    <p class="negrita">Galletas de avena, rosa y lima</p>
+                    <p class="rayaverde">12 febrero, 2019</p>
+                    <p class="izquierda">Galletitas para San Valentín? Estas galletas ricas y crujientes, elñaboradas ...</p>
+                </receta>
+                <receta>
+                    <img src="./imagenes/mijo.jpg" width="100%" height="auto">
+                    <p class="negrita">Mijo cremoso con lentejas, hortalizas y shiitake</p>
+                    <p class="rayaverde">1 febrero, 2019</p>
+                    <p class="izquierda">Un buen plato de mijo cremoso con lentejas y hortalizas es todo que necesitas ...</p>
+                </receta>
+                <receta>
+                    <img src="./imagenes/calabacines.jpg" width="100%" height="auto">
+                    <p class="negrita">Calabacines rellenos de arroz negro y calabaza</p>
+                    <p class="rayaverde">18 diciembre, 2018</p>
+                    <p class="izquierda">Estos calabacines rellenos de arroz negro y calabaza que te propongo hoy ...</p>
+                </receta>
+            </recetas>
+        </div>
+        <div id="footer">
+            <ul1 class="footer">
+                <p class="footer">FACEBOOK</p>
+                <p class="footer">TWITTER</p>
+                <p class="footer">INSTAGRAM</p>
+                <p class="footer">PINTEREST</p>
+                <p class="footer">EMAIL</p>
+            </ul1>
+        </div>
+        </body>
+    </body>
 </html>
