@@ -59,7 +59,7 @@ a {
         width: auto;
         height: auto;
         padding: 5px;
-        background-color: 7aba96 ;
+        background-color:#99b8a6 ;
     }
     presentacion {
     display: block;
@@ -90,7 +90,7 @@ a {
         width: auto;
         height: auto;
         padding: 10px;
-        background-color: white;
+        background-color: rgb(233, 233, 233);
     }
     recetas {
     float: right;
