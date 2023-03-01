@@ -11,6 +11,7 @@ a {
     display: block;
     margin-left: auto;
     margin-right: auto;
+
     }
     ul {
     width: 100%;
@@ -148,3 +149,75 @@ a {
     p.negrita:hover {
     color:#8A8070;
     }
+    .titulo{
+        text-align: center;
+        font-weight: bold;
+        font-size: 25px;
+        width: auto;
+        height: auto;
+        padding: 5px;
+        background-color:#99b8a6 ;
+        backdrop-filter: blur(5px);
+    } 
+    
+    .fotocoli{
+        position: 40px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: white;
+        width: 40%;
+        height: auto;
+        padding: 1%;
+    }
+    Anuncio2 {
+        display: block;
+        float: left;
+        width: auto;
+        height: auto;
+        padding: 10px;
+        background-color: rgb(233, 233, 233);
+        }
+    presentacion2 {
+        display: block;
+        float: left;
+        background-color: white;
+        width: auto;
+        height: auto;
+        padding: 10px;
+        }
+        .izquierda2 {
+        text-align: left;
+        }
+        .centrado2 {
+        text-align: center;
+        }
+        .negrita2 {
+        text-align: center;
+        font-weight: bold;
+        font-size: larger;
+        }
+        presentacion2 img {
+        width: auto;
+        height: auto;
+        }
+
+        recetas2 {
+        float: right;
+        background-color: white;
+        width: 56%;
+        height: auto;
+        padding: 1%;
+        }
+        .ingredientes{
+            text-align: center;
+            font-weight: bold;
+            font-size: 25px;
+            width: auto;
+            height: 50px;
+            padding: 100px;
+        } 
+          .container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
