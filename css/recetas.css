@@ -96,7 +96,7 @@ a {
     .titulo{
         text-align: center;
         font-weight: bold;
-        font-size: 50px;
+        font-size: 70px;
         width: auto;
         height: auto;
         padding: 5px;
@@ -112,19 +112,33 @@ a {
         height: auto;
         padding: 1%;
     }
-        .ingredientes{
+        .descripcion{
             text-align: center;
             font-weight: bold;
-            font-size: 50px;
+            font-size: 70px;
             width: auto;
             height: 50px;
             padding: 10px;
         } 
+        .insidescripcion{
+            width: 100%;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            font-size:30px;
+            font-weight:400;
+            display:block;
+            line-height: 29px;
+        }
+
           .container {
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
+          }
+          .content{
+            font-size: 25px ;
           }
 
           
