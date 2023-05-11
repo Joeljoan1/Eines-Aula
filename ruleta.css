@@ -1,0 +1,51 @@
+#ruleta {
+    margin-top: 5px; 
+    position: relative;
+    width: 300px; 
+    height: 300px;
+    border: 16px solid #ccc;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 3s ease-out;
+}
+
+#spin-button {
+    margin-bottom: 150px; 
+}
+
+
+#ruleta:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin: -12px 0 0 -12px;
+    background: #3498db;
+    border-radius: 50%;
+}
+
+#ruleta:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    margin: -4px 0 0 -4px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#nom-seleccionat {
+    font-size: 2em;
+    margin: 1em auto;
+    color: #ff8800;
+}
+

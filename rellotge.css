@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(135deg, #C2B8A3, #DCC89F, #FAEAC8, #C9C8C6, #B1B0AE, #B8AF9D, #E3D6BB);
+    background-size: 500%;
+    text-align: center;
+    background-color: #d8dde2;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    overflow: auto;
+}
+
+#part-superior {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    padding-bottom: 2em;
+    box-sizing: border-box;
+}
+
+.text {
+    color: white;
+    text-align: center;
+    font-size: 28px;
+}
+
+#clock {
+    font-size: 6em;
+    margin: 0.5em;
+}
+
+#date {
+    margin-top: 50px;
+    font-size: 2em;
+    margin: 0.5em;
+}
+
+#remaining {
+    font-size: 5em;
+    margin: 0.5em;    
+}
+
+button {
+    font-size: 1em;
+    padding: 0.5em 1em;
+    border: none;
+    color: #ff8800;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #CCCCCC;
+}
+
+input[type="text"] {
+    margin: 1em;
+    padding: 0.5em;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+#timer-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ruleta {
+    position: relative;
+    z-index: 1;
+    margin-top: 2em;
+}
+
+body.dark-theme {
+    background-image: linear-gradient(135deg, #1C1C1C, #272727, #323232, #3C3C3C, #474747, #515151, #5C5C5C);
+    background-color: #1C1C1C;
+    color: #FFFFFF;
+}

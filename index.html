@@ -1,79 +1,37 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="./css/estilo.css" /> 
-    </head>
-    <body>
-        <div id="header">
-            <h1>
-                <h2>
-                    <img src="./imagenes/Logo-Delicias.png" width="auto" height="auto">
-                </h2>
-            </h1>
-            <ul class="sticky">
-                <p class="sticky">INICIO</p>
-                <p class="sticky">SOBRE MI</p>
-                <p class="sticky"><a href="./receta/recetas.html">RECETAS</a></p>
-                <p class="sticky"><a href="./contacto/contactos.html">CONTACTOS</a></p>
-                <p class="sticky">OTRAS COSAS</p>
-            </ul>
+<head>
+    <title>Temporitzador & Ruleta</title>
+    <link rel="stylesheet" href="rellotge.css">
+    <link rel="stylesheet" href="ruleta.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button id="theme-toggle">Canviar aparença</button>
+    <div id="part-superior">
+        <div class="text">
         </div>
+        <div id="date"></div>
+        <div id="clock">00:00:00</div>
+        <div id="timer-inputs">
+            <input id="end_time" type="text" placeholder="HH:MM:SS">
+            <button id="set_end_time">Establir Hora </button>
+            <input id="hours" type="text" placeholder="HH">
+            <input id="minutes" type="text" placeholder="MM">
+            <input id="seconds" type="text" placeholder="SS">
+            <button id="start">Iniciar</button>
+        </div>
+        <p id="remaining"></p>
+        <audio id="alarm" src="purge.mp3" preload="auto"></audio>
+    </div>
 
-        <div id="trunk">
-            <aside1></aside1>       
-            <aside2></aside2>
-            <seccion>
-                <presentacion>
-                    <p class="negrita">Sobre mi</p>
-                    <img src="./imagenes/isagil.png">
-                    <p class="izquierda">Hola, bienvenid@ a mi blog, un espacio donde quiero compartir mis recetas vegetarianas y veganas favoritas.</p>
-                </presentacion>
-                <Anuncio>
-                    <p class="negrita">Suscríbete a mi blog</p>
-                    <img src="./imagenes/libro.png">
-                    <parrafo>Y consiguete GRATIS mi eBook con 10 recetas exclusivas con suplementos</parrafo>                    
-                </Anuncio>    
-                <p class="Boton">Apúntame</p>            
-            </seccion>       
-            <recetas>
-                <receta>
-                     <a href="recetas/pastacoliflor.html"><img src="./imagenes/Pasta.jpg" width="100%" height="auto" alt="fotocol"></a><img>
-                    <p class="negrita">Pasta con salsa de coliflor y pimienta de Jamaica</p>
-                    <p class="rayaverde">13 marzo, 2019</p>
-                    <p class="izquierda">Una salsa vegana para la pasta, tan ....</p>
-                </receta>
-                <receta>
-                    <img src="./imagenes/galletas.jpg" width="100%" height="auto">
-                    <p class="negrita">Galletas de avena, rosa y lima</p>
-                    <p class="rayaverde">12 febrero, 2019</p>
-                    <p class="izquierda">Galletitas para San Valentín? Estas galletas ricas y crujientes, elñaboradas ...</p>
-                </receta>
-                <receta>
-                    <img src="./imagenes/mijo.jpg" width="100%" height="auto">
-                    <p class="negrita">Mijo cremoso con lentejas, hortalizas y shiitake</p>
-                    <p class="rayaverde">1 febrero, 2019</p>
-                    <p class="izquierda">Un buen plato de mijo cremoso con lentejas y hortalizas es todo que necesitas ...</p>
-                </receta>
-                <receta>
-                    <img src="./imagenes/calabacines.jpg" width="100%" height="auto">
-                    <p class="negrita">Calabacines rellenos de arroz negro y calabaza</p>
-                    <p class="rayaverde">18 diciembre, 2018</p>
-                    <p class="izquierda">Estos calabacines rellenos de arroz negro y calabaza que te propongo hoy ...</p>
-                </receta>
-            </recetas>
-        </div>
-        <div id="footer">
-            <ul1 class="footer">
-                <p class="footer">FACEBOOK</p>
-                <p class="footer">TWITTER</p>
-                <p class="footer">INSTAGRAM</p>
-                <p class="footer">PINTEREST</p>
-                <p class="footer">EMAIL</p>
-            </ul1>
-        </div>
-        </body>
-    </body>
+    <div id="ruleta"></div>
+    <div id="nom-seleccionat">Prem la ruleta per a seleccionar un nom</div>
+
+    <audio id="ruleta-sound" src="misc333.mp3" preload="auto"></audio>
+    <script src="rellotge.js"></script>
+    <script src="ruleta.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <button id="spin-button">Gira la ruleta</button>
+</body>
 </html>
